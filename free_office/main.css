@@ -1,0 +1,684 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #282828;
+}
+
+a {
+    text-decoration: none;
+}
+
+#global {
+    width: 900px;
+    margin: 0px auto;
+}
+
+/* head part start */
+#head {
+    background: url(pictures/Background_1.jpg);
+    height: 418px;
+    color: white;
+    width: 900px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+/* text part */
+.text {
+    color: white;
+}
+
+.text:nth-of-type(2){
+    font-size: 175%;
+    width: 280px;
+    margin-top: 72px;
+}
+
+.text:nth-of-type(3) {
+    font-size: 75%;
+    width: 280px;
+    margin-top: 16px;
+}
+
+/* global paddings */
+.inner {
+    padding: 20px 150px 20px 150px;
+}
+
+/* small line */
+#line {
+    width: 20px;
+    background-color: white;
+    opacity: 20%;
+    height: 3px;
+    margin: 16px 0px 16px 0px;
+}
+
+/* button */
+#projects {
+    color: white;
+    opacity: 100%;
+    border: 3px solid white;
+    background-color: transparent;
+    width: 120px;
+    height: 50px;
+}
+
+#projects:hover {
+    cursor: pointer;
+}
+/* head part end */
+
+
+/* services part */
+#services {
+    margin-top: -20px;
+}
+
+#servb {
+    width: 600px;
+    height: 385px;
+    background-color: #F6F6F6;
+    padding: 20px 150px 20px 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* text part */
+#servb>p:first-child {
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 175%;
+    color: black;
+    font-weight: 400;
+    text-shadow: black 0px 0px 2px;
+    margin-bottom: -30px;
+}
+
+.servline {
+    width: 20px;
+    background-color: grey;
+    opacity: 20%;
+    height: 3px;
+    margin: 16px 0px 30px 0px;
+}
+
+#sexplanation {
+    font-size: 75%;
+    display: inline-block;
+    width: 280px;
+}
+
+/* service "buttons" part*/
+
+
+.rotate {   /* outer div of the button*/
+    position:absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+}
+
+.hoverSet { /* class to use when hover the button */
+    background-color:black;
+    color: white;
+}
+
+.elA { /* class of the a tag of the button */
+    color: inherit;
+}
+
+.backrot { /* inner div of the button */
+    transform: rotate(-45deg);
+    text-align: center;
+    display: inline-block;
+    margin-left: -10px;
+    width: 90px;
+}
+
+.stext { /* class for the text of the button */
+    font-size: 55%;
+    margin-top: -5px;
+
+}
+
+.imgbutton { /* class for the icon of the button */
+    margin-top: 25px;
+}
+
+/* positioning of the buttons */
+#product {
+    top: 250px;
+    left: 450px;
+}
+
+#acquisition {
+    top: 250px;
+    left: 565px;
+}
+
+#digital {
+    top: 190px;
+    left: 507px; 
+}
+
+#normalization {
+    top: 190px;
+    left: 622px;
+}
+
+#seosem {
+    top: 190px;
+    left: 737px;
+}
+
+#business {
+    top: 130px;
+    left: 565px;
+}
+
+#crm {
+    top: 130px;
+    left: 680px;
+}
+
+#pm {
+    top: 130px;
+    left: 795px;
+}
+
+/* footer part of the services block */
+
+#works {
+    width: 600px;
+    height: 75px;
+    background-color: #FFFFFF;
+    padding: 20px 150px 20px 150px;
+    overflow: hidden;
+}
+
+#works>p:first-child {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 175%;
+    color: black;
+    font-weight: 400;
+    text-shadow: black 0px 0px 2px;
+    margin-bottom: -15px;
+    float: left;
+}
+
+.servlinew {
+    margin: 5px 0px 0px 0px;
+    width: 20px;
+    background-color: grey;
+    opacity: 20%;
+    height: 3px;
+    clear: both;
+}
+
+#swexplanation {
+    font-size: 75%;
+    display: inline-block;
+    width: 280px;
+    margin-left: 120px;
+}
+/* end of the services block */
+
+
+/*project title part*/
+#pt {
+    background-color: #28282e;
+    height: 418px;
+    color: white;
+    width: 600px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding: 20px 150px 20px 150px;
+}
+
+#pt>div {
+    float: left;
+}
+
+#ptinnerleft {
+    width: 40%;
+    height: 100%;
+}
+
+#ptinnerselect {
+    width: 55%;
+    height: 100%;
+}
+
+#ptinnerrect {
+    width: 5%;
+    height: 100%;
+}
+
+#divpict {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+#divico {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.pttext:nth-of-type(1){
+    font-size: 175%;
+    margin-top: 100px;
+}
+
+.pttext:nth-of-type(2) {
+    font-size: 75%;
+    margin-top: 32px;
+}
+
+#ptline {
+    width: 20px;
+    background-color: white;
+    opacity: 20%;
+    height: 3px;
+    margin: -16px 0px 16px 0px;
+}
+
+/* button */
+#see {
+    color: white;
+    opacity: 100%;
+    border: 3px solid white;
+    background-color: transparent;
+    width: 120px;
+    height: 50px;
+}
+
+#see:hover {
+    cursor: pointer;
+}
+/* button end*/
+
+#pict {
+    margin-top: 120px;
+}
+
+#tab {
+    margin: 0px 10px 0px 10px;
+}
+
+#r1 {
+    margin: 150px 0px -5px 0px;
+}
+
+#r2 {
+    margin: -5px 0px -5px 0px;
+}
+
+#r4 {
+    margin-top: -5px;
+}
+
+/* read our minds block */
+
+#readourminds {
+    padding: 16px 150px 16px 150px;
+    width: 600px;
+    background-color: white;
+}
+
+/* header block */
+#mindheader {
+    width: 100%;
+    height: 93px;
+    margin-top: 50px;
+}
+
+.mindtext:nth-of-type(1) {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 175%;
+    color: black;
+    font-weight: 400;
+    text-shadow: black 0px 0px 2px;
+    margin-bottom: -15px;
+    float: left;
+}
+
+#mindline {
+    margin: -15px 0px 0px 0px;
+    width: 20px;
+    background-color: grey;
+    opacity: 20%;
+    height: 3px;
+    clear: both;
+}
+
+.mindtext:nth-of-type(2) {
+    font-size: 75%;
+    color: grey;
+    display: inline-block;
+    width: 280px;
+    margin-left: 65px;
+}
+
+/* table header block */
+
+#tableheader {
+    width: 100%;
+    font-size: 90%;
+    height: 50px;
+}
+
+#tableheader div {
+    float: left;
+    color: grey;
+    margin: 16px 0px 16px 0px;
+}
+
+#tableheader>div:first-child {
+    width: 56%;
+}
+
+#tableheader>div:nth-child(2) {
+    width: 22%;
+}
+
+#tableheader>div:nth-child(3) {
+    width: 22%;
+}
+
+/* row classes */
+.row {
+    width: 100%;
+    height: 93px;
+}
+
+
+.row:nth-of-type(3) {
+    border-top: thin solid grey;
+    border-bottom: thin solid grey;
+} 
+
+.row:nth-of-type(5) {
+    border-top: thin solid grey;
+    border-bottom: thin solid grey;
+    background: url(pictures/mindpicture.png);
+    color: white;
+}
+
+#colorW {
+    color: white;
+}
+
+.row:nth-of-type(6) {
+    border-bottom: thin solid grey;
+}
+
+.leftcol {
+    width: 56%;
+    float: left;
+}
+
+.leftcol p:first-child {
+    opacity: 50%;
+    font-size: 90%;
+}
+
+.leftcol p:last-child {
+    font-size: 75%;
+    color: grey;
+    margin-top: -10px;
+}
+
+.date {
+    width: 22%;
+    opacity: 50%;
+    float: left;
+    font-size: 90%;
+}
+
+.who {
+    width: 22%;
+    opacity: 50%;
+    float: left;
+    font-size: 90%;
+}
+
+/* footer */
+
+#mindfooter {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+#mindfooter a {
+    color: red;
+    line-height: 50px;
+    font-size: 75%;
+}
+
+/* who are we part */
+
+#whoweare {
+    width: 600px;
+    height: 385px;
+    background-color: #F6F6F6;
+    padding: 20px 150px 20px 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* text part */
+#whoweare p:first-child {
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 175%;
+    color: black;
+    font-weight: 400;
+    text-shadow: black 0px 0px 2px;
+    margin-bottom: 0px;
+}
+
+#whoweare>div:first-child {
+    width: 180px;
+    margin: 16px 0px 32px 0px;
+}
+
+#wholine {
+    width: 20px;
+    background-color: grey;
+    opacity: 20%;
+    height: 3px;
+    /*margin: 16px 0px 30px 0px;*/
+    display: inline-block;
+}
+
+#whotext {
+    color: red;
+    font-size: 75%;
+}
+
+
+#whoexplanation {
+    font-size: 75%;
+    display: inline-block;
+    width: 280px;
+    margin-top: 24px;
+}
+
+/* service "buttons" part*/
+.rotateW {   /* outer div of the button*/
+    position:absolute;
+    display: inline-block;
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-top: 55px solid rgba(237, 79, 70, .7);
+    position: absolute;
+    margin-left: -15px;
+}
+
+.whobackrot { /* inner div of the button */
+    transform: rotate(-45deg);
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    padding-top: 40px;
+    
+}
+
+.hoverWhoSet { /* class to use when hover the button */
+    visibility: hidden;
+}
+
+.elWA { /* class of the a tag of the button */
+    font-size: 50%;
+    color: white;
+    position: absolute;
+    margin-left: -35px;
+    text-align: center;
+}
+
+.elWAForEX {
+    margin-left: 0px;
+}
+
+/* positioning of the buttons */
+#manager1 {
+    top: 250px;
+    left: 450px;
+    background: url(pictures/manager1.png);
+}
+
+#manager4 {
+    top: 250px;
+    left: 565px;
+    background: url(pictures/manager4.png);
+}
+
+#manager2 {
+    top: 190px;
+    left: 507px;
+    background: url(pictures/manager2.png);
+}
+
+#manager5 {
+    top: 190px;
+    left: 622px;
+    background: url(pictures/manager5.png);
+}
+
+#manager7 {
+    top: 190px;
+    left: 737px;
+    background: url(pictures/manager7.png);
+}
+
+#manager3 {
+    top: 130px;
+    left: 565px;
+    background: url(pictures/manager3.png);
+}
+
+#manager6 {
+    top: 130px;
+    left: 680px;
+    background: url(pictures/manager6.png);
+}
+
+#manager8 {
+    top: 130px;
+    left: 795px;
+    background: url(pictures/manager8.png);
+}
+
+/* slow life */
+#slowlife {
+    width: 600px;
+    height: 385px;
+    background-color: #28282e;
+    padding: 20px 150px 20px 150px;
+    overflow: hidden;
+    text-align: center;
+    color: #f6f6f6;
+}
+
+#slowlife p:first-child {
+    font-family: TimesNewRoman, serif;
+    font-size: 175%;
+    margin-top: 20px;
+}
+
+#slowlife p:nth-child(2) {
+    font-size: 75%;
+    padding: 0px 100px;
+    margin-top: -16px;
+}
+
+#dotline {
+    width: 100%;
+}
+
+#dotline img:first-child {
+    margin-left: 0px;
+}
+
+.dot {
+    margin-left: 10px;
+}
+
+/* footer part */
+#footer {
+    width: 900px;
+    background: #28282e repeat-y;
+    overflow: hidden;
+    font-size: 75%;
+}
+
+#redfoot {
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    background-color: #ef4035;
+    padding: 24px 0px 16px 0px;
+}
+
+#letstalk {
+    color: white;
+    text-decoration: none;
+}
+
+#infofoot {
+    width: 600px;
+    padding: 16px 150px 16px 150px;
+    height: 32px;
+    color: #76767b;
+}
+
+#infofoot ul li {
+    float: left;
+    list-style-type: none;
+    
+}
+
+#infofoot ul li:nth-child(2) {
+    margin: 0px 30px;
+}
+
+#infofoot ul li:nth-child(3) {
+    margin-right: 30px;
+}
