@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> site 6 </title>
+        <link href="css/styles.less" rel="stylesheet/less" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <script type="text/javascript">less = { env: 'development' };</script>
+        <script src="js/less-1.4.1.js"></script>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/jquery.ui.core.js"></script>
+        <script src="js/jquery.ui.widget.js"></script>
+        <script src="js/jquery.ui.datepicker.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+    </head>
+    <body>
+       <!--MAIN-->
+        <section id="main">
+           <!--HEADER PART-->
+            <header id="head">
+                <h3>HOTEL<span>DELUX</span></h3>
+                <h5>Hotel&amp;Motel Theme</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">START</a></li>
+                        <li><a href="#">FACILITIES</a></li>
+                        <li><a href="#">RESTAURANT</a></li>
+                        <li><a href="#">CONFERENCE</a></li>
+                        <li><a href="#">BOOKINGS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--END HEADER PART-->
+            <!--DELUX PART-->
+            <section id="delux">
+                <h4> Hello, <span> You've Reached </span> </h4>
+                <img src="pictures/dottedline1.png" />
+                <h1> HOTEL DELUX </h1>
+                <img src="pictures/dottedline2.png" />
+                <h3> HOTEL - SPA SALOON - FINE DINING </h3>
+                <form action="#" id="regist" name="regist">
+                    
+                    <div class="group">
+                        <label for="adate"> Arrival </label>
+                        <input type="text" name="adate" id="adate" class="form-control" placeholder="08.07.2015" required="required"/> 
+                        <span class="glyphicon glyphicon-calendar dep"></span> 
+                    </div>
+                    
+                    
+                    <div class="group">
+                        <label for="ddate"> Departure </label>
+                        <input type="text" name="ddate" id="ddate" class="form-control" placeholder="08.07.2015" required="required"/>
+                        <span class="glyphicon glyphicon-calendar dep"></span>
+                    </div>
+                    
+                    <div class="group">
+                        <label for="room"> Room Type </label>
+                        <select name="room" id="room" class="form-control">
+                            <option value="r1"> Standard Single Room </option>
+                            <option value="r2"> Superior Single Room </option>
+                            <option value="r3"> Standard Double Room </option>
+                            <option value="r4"> Superior Double Room </option>
+                            <option value="r5"> Family Room </option>
+                            <option value="r6"> VIP Room </option>
+                        </select>
+                        <span class="glyphicon glyphicon-ok ok"></span>
+                    </div>
+                    
+                    <div class="group">  
+                        <input type="submit" name="view" id="view" class="btn btn-default" value="View Prices"/>
+                    </div>
+                </form>
+                <div id="shadow"></div>
+            </section>
+            <!--END DELUX PART-->
+            <!--PACKAGE PART-->
+            <section id="package">
+                <h2> Book A Package </h2>
+                <p> Sed euismod sem id consequat rutrum. Ut convallis lorem a acri mollis, eu vulputate libero aliquet. Praesent egestas nisi sed purus tincidunt faucibus. Aliquam lobortis orci lacus, sed faucibus augue dapibus vitae. Ut vitae mi sapien. Phasellus a eros justo. Curabitur odio massa, tincidunt nec nibh sit amet  </p>
+                <div class="carousel slide" id="myCarousel" data-interval="false">
+                    <div class="carousel-inner carousel-bg" >
+                      <div class="item active carousel-bg">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room1.jpg" alt="First Image">
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room1.jpg" alt="Second Image">
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room1.jpg" alt="Third Image">
+                                    </div>
+                                </li>
+                            </ul>
+                      </div>
+                      <div class="item carousel-bg">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room2.jpg" alt="Fourth Image">
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room2.jpg" alt="Fifth Image">
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <img src="pictures/room2.jpg" alt="Sixth Image">
+                                    </div>
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <img src="pictures/arrowLeft.png" alt="arrowLeft" />
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <img src="pictures/arrowRight.png" alt="arrowRight" />
+                    </a>
+                </div>
+            </section>
+            <!--END PACKAGE PART-->
+            <!--ROOM TYPES PART-->
+            <section id="roomtypes">
+                <h2> Our Room Types </h2>
+                <div>
+                    <div class="roomTypeRow">
+                        <div>
+                            <img src="pictures/roomstdoub.jpg" alt="StandardDouble">
+                            <h4> Standard Double Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                        <div>
+                            <img src="pictures/roomsupdoub.jpg" alt="SuperiorDouble">
+                            <h4> Superior Double Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                        <div>
+                            <img src="pictures/roomfam.jpg" alt="FamilyRoom">
+                            <h4> Family Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                    </div>    
+                    <div class="roomTypeRow">
+                        <div>
+                            <img src="pictures/roomSt.jpg" alt="Standard Single">
+                            <h4> Standard Single Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                        <div>
+                            <img src="pictures/roomsupsin.jpg" alt="Superior Single">
+                            <h4> Superior Single Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                        <div>
+                            <img src="pictures/roomvip.jpg" alt="VIP">
+                            <h4> VIP Room </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
+                            <img src="pictures/facilities.png" alt="Services">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END ROOM TYPES PART-->
+            <!--143 CITY PART-->
+            <section id="city">
+                <h2> 143 City Located Hotels World Wide </h2>
+                <p> <em> &quot;Hospitality, Quality &amp; Good Locations. We only provide you with the best hotels&quot; - John Doe</em> </p>
+                <img src="pictures/blackman.png" alt="man in black" id="maninblack"/>
+            </section>
+            <!--END 143 CITY PART-->
+            <!--FOOTER PART-->
+            <footer id="footer">
+                <section id="aboutHotels">
+                    <h4> ABOUT THIS HOTEL </h4>
+                    <p> Suspendisse erat mi, tincidunt sit amet massa quis, commodo fermenturn diam. Sed nec dui nec nunc tempor interdum. </p>
+                    <p> Ut vulputate augue urna, ut porta dolor imperdiet a. Vestibulum nec leo eu magna aliquam ornare. </p>
+                </section>
+                <section id="latestNews">
+                    <h4> LATEST NEWS </h4>
+                    <article> Grand Hotel joins DeluxeHotels <span class=" newsDate"> 15 AUG </span> </article>
+                    <article> Happy Christmas To Everyone <span class=" newsDate" > 15 AUG </span> </article>
+                    <article> Best Places To Visit 2014 <span class=" newsDate" > 15 AUG </span> </article>
+                    <article> Various Offers <span class=" newsDate" > 15 AUG </span> </article>
+                </section>
+                <section id="joinDeluxe">
+                    <h4> JOIN DELUXEHOTELS </h4>
+                    <p> Cum sociis nataque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum blandit egestas. Nam id lectus vel arci luctus consectetur eget id elit. In tortor odio, pellentesque eu arcu sit amet, lacinia euismod nisi. Aliquam sodales tristique mauris ac fermentum. Donec vel varius ipsum. Pallentesque vitae mollis massa. </p>
+                    <p> There is no costs or whatsoever so sign up today! </p>
+                    <input type="button" id="more" name="more" value="READ MORE">
+                </section>
+                <section id="membersArea">
+                    <h4> MEMBERS AREA </h4>
+                    <form action="#" id="member" name="member">
+                        <label for="login"> Username 
+                            <input type="text" name="login" id="login" required="required">
+                        </label>
+                        <label for="password"> Password
+                            <input type="password" name="password" id="password" required="required">
+                        </label>
+                        <input type="submit" value="LOGIN" id="login" />
+                        </form>
+                </section>
+            </footer>
+            <!--END FOOTER PART-->
+        </section>
+        <!--END MAIN-->
+    </body>
+</html>

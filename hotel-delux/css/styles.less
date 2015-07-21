@@ -1,0 +1,468 @@
+/* adding fonts */
+@font-face {
+    font-family: ARDECODE;
+    src: url('fonts/ttf/ARDECODE.ttf'),
+        url('fonts/eot/ARDECODE.eot');
+}
+
+@font-face {
+    font-family: DroidSans-Bold;
+    src: url('fonts/ttf/DroidSans-Bold.ttf'),
+        url('fonts/eot/DroidSans-Bold.eot');
+}
+
+@font-face {
+    font-family: DroidSans;
+    src: url('fonts/ttf/DroidSans.ttf'),
+        url('fonts/eot/DroidSans.eot');
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('fonts/ttf/Quicksand-Bold.ttf'),
+        url('fonts/eot/Quicksand-Bold.eot');
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('fonts/ttf/Quicksand-Regular.ttf'),
+        url('fonts/eot/Quicksand-Regular.eot');
+}
+
+/* creating mixings */
+.createFlex() {
+    display: flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+}
+
+.createFlexOrient(@orient: horizontal) {
+    -moz-box-orient: @orient;
+    -webkit-box-orient: @orient;
+    box-orient: @orient;
+}
+
+.createBoxPack (@pack: justify) {
+    -moz-box-pack: @pack;
+    -webkit-box-pack: @pack;
+    box-pack: @pack;
+}
+
+/* variables */
+
+    /*main part variables*/
+    @mainWidth: 1000px;
+
+    /*head variables*/
+
+/* general styles for buttons/selects/inputs */
+
+input, select {
+    outline: none !important;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+    #main {
+        width: @mainWidth - 300px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    #main {
+        width: @mainWidth - 150px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #main {
+        width: @mainWidth;
+    }
+}
+
+
+
+/* BODY part */
+body {
+    background-color: #282828 !important;
+}
+
+/* main part */
+#main {
+    width: @mainWidth;
+    min-width: 500px;
+    max-height: 1600px;
+    min-height: 500px;
+    margin: 24px auto 24px auto;
+}
+
+/* header part */
+#head {
+    .createFlex();
+    .createFlexOrient();
+    width: 100%;
+    height: 66px;
+    padding: 0px 66px;
+    box-sizing: border-box;
+    background-color: #2a2e33;
+    
+    >h3 {
+        font-weight: 400;
+        color: #f1f1f1;
+        font-family: DroidSans-Bold;
+        >span {
+            font-weight: 400;
+            color: #ffd700;
+        }
+    }
+    >h5 {
+        font-style: italic;
+        color: #c6c7c9;
+        font-family: Quicksand-Regular;
+        font-size: 75%;
+        margin-left: 12px;
+        margin-top: 24px;
+    }
+    >nav {
+        >ul {
+            margin-top: 0px;
+            margin-left: -40px;
+            display: inline-block;
+            >li {
+                display: block;
+                width: 80px;
+                height: 66px;
+                float: left;
+                list-style-type: none;
+                text-align: center;
+                margin-left: 22px;
+                box-sizing: border-box;
+                >a {
+                    display: inline-block;
+                    width: 85px;
+                    height: 66px;
+                    padding-top: 24px;
+                    box-sizing: border-box;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-family: DroidSans-Bold;
+                    font-size: 75%;
+                    -webkit-transition: background-color 2s, font-size 2s;
+                    -moz-transition: background-color 2s, font-size 2s;
+                    -o-transition: background-color 2s, font-size 2s;
+                    transition: background-color 1s, font-size 1s, border-top 1s;
+                    &:hover {
+                        background-color: #1e2329;
+                        font-size: 85%;
+                        border-top: 2px solid #ffd700;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+/* delux part */
+
+#delux {
+    width: 100%;
+    height: 308px;
+    background-color: #00ccff;
+    position: relative;
+    padding-top: 52px;
+    text-align: center;
+    >h4 {
+        color: #ffffff;
+        font-family: Quicksand-Bold;
+        >span {
+            font-family: Quicksand-Regular;
+            font-weight: 100;
+        }
+    }
+    >h1 {
+        color: #ffffff;
+        font-family: Quicksand-Bold;
+    }
+    >h3 {
+        color: #ffffff;
+        font-weight: 100;
+        font-family: Quicksand-Regular;
+    }
+}
+
+#regist {
+    width: 696px;
+    height: 70px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    background: #2a2e33;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 273px;
+    margin-left: -348px;
+    .createFlex();
+    >div.group {
+        width: 174px;
+        margin: auto 5px;
+        position: relative;
+        >label {
+            display: block;
+            color: #8d7d1b;
+            font-family: Quicksand-Regular;
+            font-size: 85%;
+            text-align: left;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            
+        }
+        >input[type="text"].form-control {
+            display: block;
+            border-radius: 7px;
+            font-size: 80%;
+            padding-left: 24px;
+            box-sizing: border-box;
+            &:focus {
+                outline: none !important;
+            }
+        }
+        >select.form-control {
+            border-radius: 7px;
+            font-size: 80%;
+            padding-left: 20px;
+            box-sizing: border-box;
+            outline: none !important;
+        }
+        &:last-child {
+            width: 124px;
+            >input.btn {
+                width: 124px;
+                margin-top: 22px;
+                font-size: 100%;
+                font-weight: 600;
+                border: 1px solid #ffd700;
+                background-color: #ffd700;
+                border-radius: 7px;
+            }
+        }
+        >span.dep {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+        }
+        >span.ok {
+            position: absolute;
+            top: 30px;
+            left: 7px;
+        }
+    }
+}
+
+#shadow {
+    position: absolute;
+    z-index: 1;
+    width: 574px;
+    height: 35px;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0px 35px 35px #2a2e33;
+    left: 50%;
+    margin-left: -287px;
+    top: 285px;
+}
+
+/* package part */
+#package {
+    width: 100%;
+    height: 336px;
+    padding: 70px 112px 0px 112px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    text-align: center;
+    >h2 {
+        font-family: ARDECODE;
+        color: #2a2e33;
+        font-size: 250%;
+    }
+    >p {
+        font-family: Quicksand-Regular;
+        font-size: 50%;
+    }
+}
+
+#myCarousel {
+    height: 152px;
+    >div.carousel-bg {
+        >div.item {
+            >ul { 
+                margin-left: -40px;
+                >li.span3 {
+                    list-style-type: none;
+                    float: left;
+                    &:nth-child(1) {
+                        margin-left: 148px;
+                    }
+                    &:nth-child(2) {
+                        margin-left: 18px;
+                        margin-right: 18px;
+                    }
+                    >div.thumbnail {
+                        width: 148px;
+                        height: 148px;
+                        display: inline-block;
+                        border-radius: 74px;
+                        border: 2px solid #2a2e33;
+                        box-sizing: border-box;
+                        >img {
+                            height: 146px;
+                            border-radius: 73px;
+                            margin: -5px auto 0px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >a.carousel-control {
+        margin-top: 50px;
+        background-image: none;
+    }
+}
+
+/* room types part */
+
+#roomtypes {
+    width: 100%;
+    height: 530px;
+    padding: 2px 108px 0px 108px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    text-align: center;
+    >h2 {
+        font-family: ARDECODE;
+        color: #2a2e33;
+        font-size: 250%;
+    }
+    >div {
+        width: 100%;
+        .createFlex();
+        .createFlexOrient(vertical);
+        >div.roomTypeRow {
+            width: 100%;
+            .createFlex();
+            .createFlexOrient();
+            .createBoxPack(justify);
+            &:nth-child(2) {
+                margin-top: 10px;
+            }
+            >div {
+                width: 255px;
+                >img:first-child {
+                    width: 255px;
+                    height: 106px;
+                }
+                >h4 {
+                    font-family: Quicksand-Regular;
+                    color: #2a2e33;
+                    font-size: 75%;
+                }
+                >p {
+                    font-family: Quicksand-Regular;
+                    color: #2a2e33;
+                    font-size: 50%;
+                }
+            }
+        }
+    }
+}
+
+/* city part */
+
+#city {
+    width: 100%;
+    height: 120px;
+    background-color: #e7cb2c;
+    padding: 12px 306px 0px 108px;
+    box-sizing: border-box;
+    position: relative;
+    >h2 {
+        font-family: Quicksand-Regular;
+        color: white;
+    }
+    >p {
+        font-family: Quicksand-Regular;
+        color: white;
+        font-size: 75%;
+    }
+}
+
+#maninblack {
+    position: absolute;
+    top: -58px;
+    left: 694px;
+}
+
+/* footer part */
+
+#footer {
+    width: 100%;
+    height: 262px;
+    border-bottom: 22px solid #1f1f1f;
+    padding: 12px 108px 0px 108px;
+    box-sizing: border-box;
+    background-color: #333333;
+    .createFlex();
+    .createFlexOrient();
+    .createBoxPack ();
+    >section {
+        color: #dbdbdb;
+        >h4 {
+            font-family: DroidSans;
+            font-size: 80%;
+            font-weight: 100;
+        }
+        >p, label, article {
+            font-family: Quicksand-Regular;
+            font-size: 50%;
+        }
+        >article {
+            >span {
+                color: #686031;
+            }
+        }
+        input[type="submit"], input[type="button"] {
+            background-color: #e7cb2c;
+            font-family: DroidSans-Bold;
+            font-size: 70%;
+            color: #302e1f;
+            width: 70px;
+            height: 21px;
+            border: none;
+            border-radius: 7px;
+        }
+    }
+    >#aboutHotels {
+        width: 152px;
+    }
+    >#latestNews {
+        width: 130px;
+    }
+    >#joinDeluxe {
+        width: 306px;
+    }
+    >#membersArea {
+        width: 143px;
+        input[type="text"], input[type="password"] {
+            width: 139px;
+            height: 21px;
+            border-radius: 7px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: transparent;
+        }
+    }
+    
+}
