@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> site 6 </title>
+        <title> Example of the site 6 </title>
         <link href="css/styles.less" rel="stylesheet/less" type="text/css" />
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <script type="text/javascript">less = { env: 'development' };</script>
@@ -25,12 +25,12 @@
                 <h5>Hotel&amp;Motel Theme</h5>
                 <nav>
                     <ul>
-                        <li><a href="#">START</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li><a href="#">RESTAURANT</a></li>
-                        <li><a href="#">CONFERENCE</a></li>
-                        <li><a href="#">BOOKINGS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#"  data-toggle="modal" data-target="#myModal">START</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">FACILITIES</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">RESTAURANT</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">CONFERENCE</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">BOOKINGS</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">CONTACT US</a></li>
                     </ul>
                 </nav>
             </header>
@@ -221,5 +221,23 @@
             <!--END FOOTER PART-->
         </section>
         <!--END MAIN-->
+        
+        <!-- MODALS -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <p> This navigation should use AJAX and server part logic </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>
