@@ -14,7 +14,7 @@ a {
 
 /* head part start */
 #head {
-    background: url(pictures/Background_1.jpg);
+    background: url(../pictures/Background_1.jpg);
     height: 418px;
     color: white;
     width: 900px;
@@ -60,6 +60,7 @@ a {
     background-color: transparent;
     width: 120px;
     height: 50px;
+    outline: none;
 }
 
 #projects:hover {
@@ -74,12 +75,13 @@ a {
 }
 
 #servb {
-    width: 600px;
+    width: 900px;
     height: 385px;
     background-color: #F6F6F6;
     padding: 20px 150px 20px 150px;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* text part */
@@ -268,6 +270,10 @@ a {
     text-align: center;
 }
 
+img.device:hover {
+    cursor: pointer;
+}
+
 .pttext:nth-of-type(1){
     font-size: 175%;
     margin-top: 100px;
@@ -294,6 +300,7 @@ a {
     background-color: transparent;
     width: 120px;
     height: 50px;
+    outline: none;
 }
 
 #see:hover {
@@ -405,7 +412,7 @@ a {
 .row:nth-of-type(5) {
     border-top: thin solid grey;
     border-bottom: thin solid grey;
-    background: url(pictures/mindpicture.png);
+    background: url(../pictures/mindpicture.png);
     color: white;
 }
 
@@ -561,49 +568,49 @@ a {
 #manager1 {
     top: 250px;
     left: 450px;
-    background: url(pictures/manager1.png);
+    background: url(../pictures/manager1.png);
 }
 
 #manager4 {
     top: 250px;
     left: 565px;
-    background: url(pictures/manager4.png);
+    background: url(../pictures/manager4.png);
 }
 
 #manager2 {
     top: 190px;
     left: 507px;
-    background: url(pictures/manager2.png);
+    background: url(../pictures/manager2.png);
 }
 
 #manager5 {
     top: 190px;
     left: 622px;
-    background: url(pictures/manager5.png);
+    background: url(../pictures/manager5.png);
 }
 
 #manager7 {
     top: 190px;
     left: 737px;
-    background: url(pictures/manager7.png);
+    background: url(../pictures/manager7.png);
 }
 
 #manager3 {
     top: 130px;
     left: 565px;
-    background: url(pictures/manager3.png);
+    background: url(../pictures/manager3.png);
 }
 
 #manager6 {
     top: 130px;
     left: 680px;
-    background: url(pictures/manager6.png);
+    background: url(../pictures/manager6.png);
 }
 
 #manager8 {
     top: 130px;
     left: 795px;
-    background: url(pictures/manager8.png);
+    background: url(../pictures/manager8.png);
 }
 
 /* slow life */

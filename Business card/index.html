@@ -5,7 +5,8 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Test site </title>
+        <meta name="description" content="Это сайт визитка Шершнева Е.В. веб-разработчика и верстальщика">
+        <title> визитка Шершнева Е.В. </title>
         <link rel="stylesheet/less" href="css/styles.less" type="text/css" />
         <link rel="stylesheet" href="css/jquery.ui.all.css" />
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -25,9 +26,9 @@
            <!-- HEADER SECTION -->
             <header id="header">
                 <h1> ПРИВЕТ! </h1>
-                <h1> МЕНЯ ЗОВУТ <span>ЕВГЕНИЙ ШЕРШНЕВ</span> </h1>
-                <h4> Я ТАЛАНТЛИВЫЙ <span>ВЕБ-РАЗРАБОТЧИК<sup>1</sup></span> И <span>ВЕРСТАЛЬЩИК<sup>2</sup></span> </h4>
-                <a id="thisIsMyButton" class="btn btn-default btn-sm"> <img src="pictures/arrow%20for%20button%20down.png"  alt="Arrow down"/> ЭТО МОЕ ВСЕ... </a>
+                <h1> МЕНЯ ЗОВУТ <span itemscope itemtype="http://schema.org/Person" itemprop="name">ЕВГЕНИЙ ШЕРШНЕВ</span> </h1>
+                <h4 itemscope itemtype="http://schema.org/JobPosting"> Я ТАЛАНТЛИВЫЙ <span itemprop="title">ВЕБ-РАЗРАБОТЧИК<sup>1</sup></span> И <span itemprop="title">ВЕРСТАЛЬЩИК<sup>2</sup></span> </h4>
+                <button id="thisIsMyButton" class="btn btn-default btn-sm"> <img src="pictures/arrow%20for%20button%20down.png"  alt="Arrow down"/> ЭТО МОЕ ВСЕ... </button>
                 <img src="pictures/black%20sketch%20book.png" alt="Black sketch book" class="Parralax img-responsive" />
                 <img src="pictures/laptop.png" class="img-responsive" alt="Laptop"/>
                 <img src="pictures/lang.png" class="img-responsive" alt="Language"/>
@@ -41,12 +42,12 @@
                     <h2> С ЧЕМ РАБОТАЮ </h2>
                     <p> языки, фрэймворки, CMS </p>
                     <ul>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label>    
-                            <p>HTML5</p>
+                            <p itemprop="skills">HTML5</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -55,12 +56,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>CSS3</p>
+                            <p itemprop="skills">CSS3</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -69,12 +70,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>JavaScript</p>
+                            <p itemprop="skills">JavaScript</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -83,12 +84,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>JQuery</p>
+                            <p itemprop="skills">JQuery</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -97,12 +98,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>AJAX</p>
+                            <p itemprop="skills">AJAX</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -111,12 +112,68 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>PHP</p>
+                            <p itemprop="skills">PHP</p>
+                            <div class="starBox">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                            </div>    
+                        </li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
+                            <label class="myCheckbox">
+                                <input type="checkbox" name="check" class="check">
+                                <span></span>
+                            </label> 
+                            <p itemprop="skills">SQL</p>
+                            <div class="starBox">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                            </div>    
+                        </li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
+                            <label class="myCheckbox">
+                                <input type="checkbox" name="check" class="check">
+                                <span></span>
+                            </label> 
+                            <p itemprop="skills">.NET</p>
+                            <div class="starBox">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                            </div>    
+                        </li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
+                            <label class="myCheckbox">
+                                <input type="checkbox" name="check" class="check">
+                                <span></span>
+                            </label> 
+                            <p itemprop="skills">RUBY</p>
+                            <div class="starBox">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
+                            </div>    
+                        </li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
+                            <label class="myCheckbox">
+                                <input type="checkbox" name="check" class="check">
+                                <span></span>
+                            </label> 
+                            <p itemprop="skills">CMS WordPress</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -130,7 +187,7 @@
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>SQL</p>
+                            <p itemprop="skills">CMS Joomla</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -139,12 +196,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>    
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>.NET</p>
+                            <p itemprop="skills">CMS OpenCart</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -153,12 +210,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>    
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>RUBY</p>
+                            <p itemprop="skills">CMS Simpla</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -167,12 +224,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>    
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>CMS WordPress</p>
+                            <p itemprop="skills">Android</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -181,68 +238,12 @@
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                             </div>    
                         </li>
-                        <li>
+                        <li itemscope itemtype="http://schema.org/JobPosting">
                             <label class="myCheckbox">
                                 <input type="checkbox" name="check" class="check">
                                 <span></span>
                             </label> 
-                            <p>CMS Joomla</p>
-                            <div class="starBox">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                            </div>    
-                        </li>
-                        <li>
-                            <label class="myCheckbox">
-                                <input type="checkbox" name="check" class="check">
-                                <span></span>
-                            </label> 
-                            <p>CMS OpenCart</p>
-                            <div class="starBox">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                            </div>    
-                        </li>
-                        <li>
-                            <label class="myCheckbox">
-                                <input type="checkbox" name="check" class="check">
-                                <span></span>
-                            </label> 
-                            <p>CMS Simpla</p>
-                            <div class="starBox">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                            </div>    
-                        </li>
-                        <li>
-                            <label class="myCheckbox">
-                                <input type="checkbox" name="check" class="check">
-                                <span></span>
-                            </label> 
-                            <p>Android</p>
-                            <div class="starBox">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                                <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
-                            </div>    
-                        </li>
-                        <li>
-                            <label class="myCheckbox">
-                                <input type="checkbox" name="check" class="check">
-                                <span></span>
-                            </label> 
-                            <p>IOS</p>
+                            <p itemprop="skills">IOS</p>
                             <div class="starBox">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
                                 <img src="pictures/grey%20star.png" alt="Star" class="Star img-responsive">
@@ -270,15 +271,15 @@
                         </li>
                     </ul>
                     <div id="listMarkers">
-                        <img src="pictures/blank%20marker.png" alt="marker" class="marker img-responsive" id="firstmarker"/>
+                        <img src="pictures/blank%20marker.png" alt="List marker" class="marker img-responsive" id="firstmarker"/>
                         <div id="firstLine"></div>
-                        <img src="pictures/blank%20marker.png" alt="marker" class="marker img-responsive" id="secondmarker"/>
+                        <img src="pictures/blank%20marker.png" alt="List marker" class="marker img-responsive" id="secondmarker"/>
                         <div id="secondLine"></div>
-                        <img src="pictures/blank%20marker.png" alt="marker" class="marker img-responsive" id="thirdmarker"/>
+                        <img src="pictures/blank%20marker.png" alt="List marker" class="marker img-responsive" id="thirdmarker"/>
                         <div id="thirdLine"></div>
-                        <img src="pictures/blank%20marker.png" alt="marker" class="marker img-responsive" id="fourthmarker"/>
+                        <img src="pictures/blank%20marker.png" alt="List marker" class="marker img-responsive" id="fourthmarker"/>
                         <div id="fourthLine"></div>
-                        <img src="pictures/blank%20marker.png" alt="marker" class="marker img-responsive" id="fifthmarker"/>
+                        <img src="pictures/blank%20marker.png" alt="List marker" class="marker img-responsive" id="fifthmarker"/>
                         <div id="fifthLine"></div>
                     </div>
                 </section>
@@ -311,7 +312,7 @@
             <section id="videoSection">
                 <h2>ОДНА ИЗ МОИХ РАБОТ</h2>
                 <p>видео скринкаст кейса</p>
-                <div id="frame">
+                <div id="frame" itemscope itemtype="http://schema.org/CreativeWork" itemprop="workExample">
                     <iframe src="//www.youtube.com/embed/HfnJ1ccnKPc" id="ifVideo" allowfullscreen></iframe>
                 </div>
                 <div class="social">
@@ -335,20 +336,20 @@
                 <p> нажмите на рисунок чтобы узнать подробнее </p>
                 <div id="works">
                     <div>
-                    <a href="http://example2.siteex.esy.es/" id="firstWork" class="wordprWorks" target="_blank">
-                        <img src="pictures/preview.jpg" class="img-responsive"/>
+                    <a href="http://www.hotel-deluxe.portfolioex.esy.es/" id="firstWork" class="wordprWorks" target="_blank" itemscope itemtype="http://schema.org/CreativeWork" itemprop="workExample">
+                        <img src="pictures/preview.jpg" class="img-responsive" alt="Страница из портфолио Шершнева Е.В."/>
                         <p> second page </p>
                     </a>
                     </div>
                     <div>
-                    <a href="http://example1.siteex.esy.es/" id="secondWork" class="wordprWorks" target="_blank">
-                        <img src="pictures/Preview2.jpg" class="img-responsive"/>
+                    <a href="http://www.free-office.siteex.esy.es/" id="secondWork" class="wordprWorks" target="_blank" itemscope itemtype="http://schema.org/CreativeWork" itemprop="workExample">
+                        <img src="pictures/Preview2.jpg" class="img-responsive" alt="Страница из портфолио Шершнева Е.В."/>
                         <p> third page </p>
                     </a>
                     </div>
                     <div>
-                    <a href="http://example4.portfolioex.esy.es/" id="thirdWork" class="wordprWorks" target="_blank">
-                        <img src="pictures/hexal.jpg" class="img-responsive"/>
+                    <a href="http://www.hexal.siteex.esy.es/" id="thirdWork" class="wordprWorks" target="_blank" itemscope itemtype="http://schema.org/CreativeWork" itemprop="workExample">
+                        <img src="pictures/hexal.jpg" class="img-responsive" alt="Страница из портфолио Шершнева Е.В."/>
                         <p> fourth page </p>
                     </a>
                     </div>
@@ -363,31 +364,31 @@
                 <div id="form">
                    
                     <button class="btn btn-default img-responsive" name="meet" id="meet">
-                    <img src="pictures/bnt%20pict1.png" class="img-responsive"/> <span>ПОЗНАКОМИТЬСЯ</span>
+                    <img src="pictures/bnt%20pict1.png" class="img-responsive" alt="Button icon"/> <span>ПОЗНАКОМИТЬСЯ</span>
                     </button>   
                     <input type="button" class="btn btn-primary img-responsive" value="Ваша почта/skype" id="modalForm" name="modalForm" data-target="#modalData" data-toggle="modal"/>
-                    <button type="button" class="btn btn-default img-responsive" id="send" name="send"> <img src="pictures/btn%20arrow%20pict.png" class="img-responsive" /> <span>ОТПРАВИТЬ</span> </button>
+                    <button type="button" class="btn btn-default img-responsive" id="send" name="send"> <img src="pictures/btn%20arrow%20pict.png" class="img-responsive" alt="Button left arrow icon"/> <span>ОТПРАВИТЬ</span> </button>
                 </div>
-                <img src="pictures/photo.png" id="photo"/>
+                <img src="pictures/photo.png" id="photo" alt="Шершнев Е.В. фото"/>
             </section>
             <!-- HEAR SECTION END-->
             
             <!-- MY PROFILES -->
             <section id="profile">
                 <p> мои профили...смотрите, спрашивайте, подписывайтесь </p>
-                <a href="https://www.facebook.com/yevsher" target="_blank"><img src="pictures/facebook.png" alt="facebook"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="pictures/twitter.png"/></a>
+                <a href="https://www.facebook.com/yevsher" target="_blank"><img src="pictures/facebook.png" alt="Shershniov Y.V. facebook account"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="pictures/twitter.png" alt="Twitter main page"/></a>
             </section>
             <!-- MY PROFILES END-->
             
             <!-- FOOTER -->
             <footer>
                 <div id="workTime">
-                    <img src="pictures/alarm%20clock.png" alt="alarm"/>
+                    <img src="pictures/alarm%20clock.png" alt="Alarm clock"/>
                     <p> время реализации 60 часов </p>
                 </div>
                 <div id="complexity">
-                    <img src="pictures/bomb.png" alt="complexity"/>
+                    <img src="pictures/bomb.png" alt="Bomb picture"/>
                     <p> уровень сложности: </p>
                     <div id="starBoxComplex">
                                 <img src="pictures/goldstar.png" alt="Star" class="img-responsive">
@@ -398,10 +399,10 @@
                     </div>
                 </div>
                 <div id="testCase">
-                    <img src="pictures/zoom.png" alt="zoom"/>
+                    <img src="pictures/zoom.png" alt="Zoom picture"/>
                     <p> Тестовое задание для компании: </p>
                     <a href="http://landing.uni.co.ua/" target="_blank">
-                        <img src="pictures/logo%20footer.png" alt="logo"/>
+                        <img src="pictures/logo%20footer.png" alt="Web-site orderer logo"/>
                     </a>
                 </div>
             </footer>

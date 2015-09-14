@@ -135,11 +135,11 @@ $(window).load(function(){
             .filter(".starBox").children().filter(".Star");
         
         if($(this).is(":checked") == true) {
-            if(star.eq(1).attr("src") != "../pictures/goldstar.png") {
+            if(star.eq(0).attr("src") != "../pictures/goldstar.png") {
                 star.attr("src", "../pictures/goldstar.png");
             }
         } else {
-            var stBox = star.eq(1).parent(),
+            var stBox = star.eq(0).parent(),
                 i = starBoxFun(stBox);
             starQ[i] = 0;
             star.attr("src", "../pictures/grey star.png");
@@ -255,6 +255,8 @@ $(window).load(function(){
         $(".starBox").eq(1).children("img:nth-child(3)").trigger("click");
         $(".starBox").eq(2).children("img:nth-child(3)").trigger("click");
         $(".starBox").eq(3).children("img:nth-child(3)").trigger("click");
+        $(".starBox").eq(4).children("img:nth-child(2)").trigger("click");
+        $(".starBox").eq(5).children("img:nth-child(1)").trigger("click");
         $(".starBox").eq(6).children("img:nth-child(2)").trigger("click");
         $(".starBox").eq(9).children("img:nth-child(2)").trigger("click");
         

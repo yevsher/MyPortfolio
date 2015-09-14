@@ -132,6 +132,7 @@ function init() {
      //adding maoseover and mouse out events on personel
     for (i = 0; i < len; i++) {
         elRW[i].addEventListener("mouseover", function (e) {
+            this.style.cursor = "pointer";
             var myIndex = findIndex(this);
             elWA[myIndex].classList.remove("hoverWhoSet");
             triangle[myIndex].classList.remove("hoverWhoSet");
@@ -176,6 +177,40 @@ function init() {
             c = 0;
         }
     }
+    
+    //modal window on menus and butons press
+    //project button press
+    document.querySelector("#projects").addEventListener("click", function(){
+        alert("This web-page consists of only one page!");
+    })
+    //Services links click
+    for(i=0; i < len; i++) {
+        elA[i].addEventListener("click", function(){
+            alert("This web-page consists of only one page!");
+        })
+    }
+    //See it live button click
+    document.querySelector("#see").addEventListener("click", function(){
+        alert("This web-page consists of only one page!");
+    })
+    //See all articles here link
+    document.querySelector("#seeAll").addEventListener("click", function(){
+        alert("This web-page consists of only one page!");
+    })
+    //Meet the entire teem link
+    document.querySelector("#whotext").addEventListener("click", function(){
+        alert("This web-page consists of only one page!");
+    })
+    //Who are we personnel links click
+    for(i=0; i < len; i++) {
+        elRW[i].addEventListener("click", function(){
+            alert("This web-page consists of only one page!");
+        })
+    }
+    //lets talk link click
+    document.querySelector("#letstalk").addEventListener("click", function(){
+        alert("This web-page consists of only one page!");
+    })
     
 }
 

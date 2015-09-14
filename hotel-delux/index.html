@@ -4,9 +4,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Example of the site 6 </title>
+        <meta name="description" content="This is a portfolio page for presentation" />
+        <meta name="robots" content="index, nofollow" />
+        <title> Hotel Delux </title>
         <link href="css/styles.less" rel="stylesheet/less" type="text/css" />
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/themes/jquery.ui.all.css"/>
         <script type="text/javascript">less = { env: 'development' };</script>
         <script src="js/less-1.4.1.js"></script>
         <script src="js/jquery-1.11.3.js"></script>
@@ -20,8 +23,8 @@
        <!--MAIN-->
         <section id="main">
            <!--HEADER PART-->
-            <header id="head">
-                <h3>HOTEL<span>DELUX</span></h3>
+            <header id="head" itemscope itemtype="http://schema.org/Organization">
+                <h3>HOTEL<span itemprop="brand">DELUX</span></h3>
                 <h5>Hotel&amp;Motel Theme</h5>
                 <nav>
                     <ul>
@@ -36,11 +39,11 @@
             </header>
             <!--END HEADER PART-->
             <!--DELUX PART-->
-            <section id="delux">
+            <section id="delux" itemscope itemtype="http://schema.org/Organization">
                 <h4> Hello, <span> You've Reached </span> </h4>
-                <img src="pictures/dottedline1.png" />
-                <h1> HOTEL DELUX </h1>
-                <img src="pictures/dottedline2.png" />
+                <img src="pictures/dottedline1.png" alt="Dotted line"/>
+                <h1 itemprop="legalName"> HOTEL DELUX </h1>
+                <img src="pictures/dottedline2.png" alt="Dotted line"/>
                 <h3> HOTEL - SPA SALOON - FINE DINING </h3>
                 <form action="#" id="regist" name="regist">
                     
@@ -87,17 +90,17 @@
                             <ul class="thumbnails">
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room1.jpg" alt="First Image">
+                                        <img src="pictures/room1.jpg" alt="Superior single room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room1.jpg" alt="Second Image">
+                                        <img src="pictures/room1.jpg" alt="Superior single room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room1.jpg" alt="Third Image">
+                                        <img src="pictures/room1.jpg" alt="Superior single room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                             </ul>
@@ -106,27 +109,27 @@
                             <ul class="thumbnails">
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room2.jpg" alt="Fourth Image">
+                                        <img src="pictures/room2.jpg" alt="VIP room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room2.jpg" alt="Fifth Image">
+                                        <img src="pictures/room2.jpg" alt="VIP room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                                 <li class="span3">
                                     <div class="thumbnail">
-                                        <img src="pictures/room2.jpg" alt="Sixth Image">
+                                        <img src="pictures/room2.jpg" alt="VIP room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                                     </div>
                                 </li>
                             </ul>
                       </div>
                     </div>
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <img src="pictures/arrowLeft.png" alt="arrowLeft" />
+                        <img src="pictures/arrowLeft.png" alt="Arrow left" />
                     </a>
                     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <img src="pictures/arrowRight.png" alt="arrowRight" />
+                        <img src="pictures/arrowRight.png" alt="Arrow right" />
                     </a>
                 </div>
             </section>
@@ -137,42 +140,42 @@
                 <div>
                     <div class="roomTypeRow">
                         <div>
-                            <img src="pictures/roomstdoub.jpg" alt="StandardDouble">
+                            <img src="pictures/roomstdoub.jpg" alt="Standard Double room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> Standard Double Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for Standard Double room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                         <div>
-                            <img src="pictures/roomsupdoub.jpg" alt="SuperiorDouble">
+                            <img src="pictures/roomsupdoub.jpg" alt="Superior Double room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> Superior Double Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for Superior Double room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                         <div>
-                            <img src="pictures/roomfam.jpg" alt="FamilyRoom">
+                            <img src="pictures/roomfam.jpg" alt="Family room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> Family Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for Family room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                     </div>    
                     <div class="roomTypeRow">
                         <div>
-                            <img src="pictures/roomSt.jpg" alt="Standard Single">
+                            <img src="pictures/roomSt.jpg" alt="Standard Single room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> Standard Single Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for Standard Single room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                         <div>
-                            <img src="pictures/roomsupsin.jpg" alt="Superior Single">
+                            <img src="pictures/roomsupsin.jpg" alt="Superior Single room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> Superior Single Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for Superior Single room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                         <div>
-                            <img src="pictures/roomvip.jpg" alt="VIP">
+                            <img src="pictures/roomvip.jpg" alt="VIP room" itemscope itemtype="http://schema.org/Place" itemprop="photo"/>
                             <h4> VIP Room </h4>
                             <p> Lorem ipsum dolor sit amet, consectetur adipsing elit. Praesent scolarisque lectus vitae dui sollicitudin commodo. </p>
-                            <img src="pictures/facilities.png" alt="Services">
+                            <img src="pictures/facilities.png" alt="Room services for VIP room" itemscope itemtype="http://schema.org/Organization" itemprop="makesOffer"/>
                         </div>
                     </div>
                 </div>
@@ -182,7 +185,7 @@
             <section id="city">
                 <h2> 143 City Located Hotels World Wide </h2>
                 <p> <em> &quot;Hospitality, Quality &amp; Good Locations. We only provide you with the best hotels&quot; - John Doe</em> </p>
-                <img src="pictures/blackman.png" alt="man in black" id="maninblack"/>
+                <img src="pictures/blackman.png" alt="Picture of misterious customer" id="maninblack"/>
             </section>
             <!--END 143 CITY PART-->
             <!--FOOTER PART-->
@@ -203,7 +206,7 @@
                     <h4> JOIN DELUXEHOTELS </h4>
                     <p> Cum sociis nataque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum blandit egestas. Nam id lectus vel arci luctus consectetur eget id elit. In tortor odio, pellentesque eu arcu sit amet, lacinia euismod nisi. Aliquam sodales tristique mauris ac fermentum. Donec vel varius ipsum. Pallentesque vitae mollis massa. </p>
                     <p> There is no costs or whatsoever so sign up today! </p>
-                    <input type="button" id="more" name="more" value="READ MORE">
+                    <input type="button" id="more" name="more" value="READ MORE" data-toggle="modal" data-target="#myModal"/>
                 </section>
                 <section id="membersArea">
                     <h4> MEMBERS AREA </h4>

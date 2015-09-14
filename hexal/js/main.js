@@ -45,7 +45,7 @@ $(document).ready(function() {
                 index = 0, i = 0, lef;
             
             //creating hover effect for elements in sample part when adding sample part
-            if(hrefAtr == "sample.html") {
+            if(hrefAtr == "navigation-pages/sample.html") {
                 $("#content").load(hrefAtr+"#container", function() {
                     $("#content").on("mouseover", "a.hex", function() {
                         $(this).append(hexaHolder);
