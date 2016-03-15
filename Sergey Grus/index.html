@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Create angular application -->
+<html lang="ru" ng-app="testApp">
+	<head>
+		<!--general page configuration and title-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test application for Sergey</title>
+		
+		<!--linking bootstrap styles-->
+		<link href="styles/css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+	<!--Announce controller for the application-->
+	<body ng-controller="ListItemsController">
+		<!--Create media template-->
+		<div class="media-object">
+			<ul class="media-list">
+				<li class="media" ng-repeat="list in lists track by $index">
+					<div class="media-left media-middle">
+						<img class="media-object img-thumbnail" ng-src={{list.image}} alt="Element"/>
+					</div>
+					<div class="media-body">
+						<span>{{list.name}}<span>
+						<span>{{list.number}}</span>
+						<button type="button" class="btn btn-default" ng-click="removeItem(list.number)">
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>
+					</div>
+				</li>		
+			</ul>
+		</div>
+		<!--Create create button-->
+		<div class="media-object">
+			<button type="button" id="create" class="btn btn-default" ng-click="createItem()">
+				Create Item
+			</button>
+		</div>
+		
+		<!--uploading angular framework-->	
+		<script src="scripts/angular.min.js"></script>
+
+		<!--application script-->
+		<script>
+			angular.module('testApp', []).controller('ListItemsController', ['$scope', function($scope){
+				var i = 0; //variable for the loop for creating initial list
+				
+				$scope.lists = []; //creating application object array
+				
+				$scope.createItem = function(){ //the method for creating new items in a list
+					var length = $scope.lists.length,
+						item = {
+						name: "элемент списка",
+						number: 0,
+						image: "styles/pictures/emoticon.gif"
+						};
+					item.number = length + 1;
+					$scope.lists.push(item);
+				};
+				
+				$scope.removeItem = function(number) { //the method for removing items from the list
+					$scope.lists.splice(number-1,1);
+					
+					var length = $scope.lists.length
+						i = 0;
+					
+					for(i = 0; i < length; i++){
+						$scope.lists[i]['number'] = i + 1;
+					};
+				};
+				
+				for(i = 0; i < 4; i++) { //creating initial list
+					$scope.createItem();	
+				};
+			}]);
+		</script>
+		
+		
+	</body>
+</html>
